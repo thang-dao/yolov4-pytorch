@@ -545,6 +545,7 @@ def get_args(**kwargs):
                         help='dataset dir', dest='dataset_dir')
     parser.add_argument('-pretrained', type=str, default='yolov4.conv.137.pth', help='pretrained yolov4.conv.137')
     parser.add_argument('-classes', type=int, default=1, help='dataset classes')
+    parser.add_argument('-epochs', type=int, default=100, help='epochs', dest='TRAIN_EPOCHS')
     parser.add_argument(
         '-optimizer', type=str, default='adam',
         help='training optimizer',
